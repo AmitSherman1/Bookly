@@ -1,0 +1,89 @@
+.cartBarSection{
+    z-index: 20;
+    width: 100%;
+    height: calc(100vh - 110px);
+    position: absolute;
+    backdrop-filter: blur(15px);
+    top: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    animation-name: cartBarBackGround;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    overflow: hidden;
+}
+
+.cartBarMain{
+    width: 250px;
+    height: 95%;
+    background-color: var(--main-color);
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow:  2px 2px 6px 3px rgba(0, 0, 0, 0.8);
+    animation-name: cartBarEnter;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes cartBarBackGround {
+    from {backdrop-filter: blur(0px);}
+    to {backdrop-filter: blur(15px);}
+}
+
+@keyframes cartBarEnter {
+    from {transform: translateX(100%);}
+    to {transform: translateX(0%);}
+}
+
+.cartBookContainer{
+    height: 90%;
+    overflow: auto;
+}
+
+.cartItemMain{
+    height:155px;
+    width: 220px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cartItemImage{
+    height: 100px;
+    box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.4);
+}
+
+.cartItemDescription{
+    height: 55px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cartItemName{
+    text-align: center;
+    color: white;
+    font-family: 'Edu SA Beginner', cursive;
+    font-weight: 700;
+}
+
+.cartItemPrice{
+    color: white;
+}
+
+.cartBarTotalPrice{
+    text-align: center;
+    color: white;
+    font-family: 'Edu SA Beginner', cursive;
+    font-weight: 700;
+}
+
+.cartItemTrashIcon{
+    height: 20px;
+    cursor: pointer;
+}

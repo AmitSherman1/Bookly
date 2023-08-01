@@ -1,0 +1,23 @@
+.bookGenreButtonMain{
+    border-radius: 50%;
+    min-height: 200px;
+    min-width: 200px;
+    background-color: rgba(255,255,255,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid var(--main-color) 3px;
+    cursor: pointer;
+}
+
+.bookGenreButtonText{
+    color: var(--main-color);
+    font-family: 'Edu SA Beginner', cursive;
+    font-weight: 200;
+    font-size: 30px;
+}
+
+.bookGenreButtonMain:hover{
+    transition: ease-in-out 0.3s;
+    background-color: rgba(255,255,255,0.4);
+}

@@ -1,0 +1,89 @@
+.bookItemMain{
+    height: 305px;
+    width: 200px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    position: relative;
+}
+
+.bookItemMain:hover{
+    animation-name: BookItemHover;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    transform: scale(105%);
+}
+
+.bookItemImage{
+    height: 240px;
+    width: 165px;
+    box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.4);
+}
+
+.bookItemAddToCart{
+    height: 240px;
+    width: 165px;
+    background-color: rgba(255,255,255,0.6);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: BookItemAddToCartHover;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    transform: scale(103%)
+}
+
+.bookItemAddToCartText{
+    color: var(--main-color);
+    font-family: 'Edu SA Beginner', cursive;
+    font-weight: 700;
+    font-size: large;
+}
+
+.bookItemAddToCartIcon{
+    height: 20px;
+}
+
+.bookItemDescription{
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.bookItemName{
+    text-align: center;
+    color: var(--main-color);
+    font-family: 'Edu SA Beginner', cursive;
+    font-weight: 700;
+    font-size: large;
+}
+
+.bookItemPrice{
+    color: var(--main-color);
+
+}
+
+@keyframes BookItemHover {
+    from {transform: scale(100%);}
+    to {transform: scale(105%);}
+}
+
+@keyframes BookItemAddToCartHover {
+    from {
+        transform: scale(100%);
+        opacity: 0%;
+    }
+    to {
+        transform: scale(103%);
+        opacity: 100%;
+    }
+}

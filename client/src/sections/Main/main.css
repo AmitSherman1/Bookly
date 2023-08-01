@@ -1,0 +1,9 @@
+.mainSection{
+    height: calc(100vh - 110px);
+    width: 100%;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(77,4,84,0.695203081232493) 51%, rgba(255,255,255,1) 100%);
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    justify-content: space-evenly;
+}

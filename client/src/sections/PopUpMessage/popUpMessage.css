@@ -1,0 +1,31 @@
+.popupMessageMain{
+    position: absolute;
+    top: 0;
+    left: calc(50vw - 200px);
+    margin: auto;
+    height: 60px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.6);
+    backdrop-filter: blur(10px);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow:  1px 1px 4px 2px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: popupMessage;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+.popupMessageText{
+    color: var(--main-color);
+    font-family: 'Edu SA Beginner', cursive;
+    font-weight: 700;
+    font-size: large;
+}
+
+@keyframes popupMessage {
+    from {transform: translateY(-100%);}
+    to {transform: translateY(0%);}
+}
